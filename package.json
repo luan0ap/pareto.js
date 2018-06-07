@@ -14,7 +14,7 @@
     "immutable",
     "lightweight",
     "fast",
-    "typescript",
+    "javascript",
     "library",
     "stdlib",
     "modules"
@@ -26,8 +26,12 @@
   "author": "Matheus Lima <matheusml90@gmail.com> (https://matheuslima.com)",
   "license": "MIT",
   "jest": {
-    "moduleFileExtensions": ["js"],
-    "testMatch": ["**/__tests__/*.(ts|js)"]
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testMatch": [
+      "**/__tests__/*.(ts|js)"
+    ]
   },
   "devDependencies": {
     "jest": "19.0.2",
