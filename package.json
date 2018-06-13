@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An extremely small, intuitive and fast functional utility library for JavaScript",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "dev": "webpack -w --mode development --module-bind js=babel-loader --output-path='./dist'",
     "build": "webpack --mode production --module-bind js=babel-loader"
   },
@@ -39,7 +39,8 @@
     "babel-jest": "23.0.1",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
-    "jest": "19.0.2",
+    "jest": "23.1.0",
+    "regenerator-runtime": "0.11.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
   }

@@ -86,15 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/extra/chunks.js":
+/*!*****************************!*\
+  !*** ./src/extra/chunks.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (arr, num) {\n  var result = [];\n  var length = arr.length;\n  var i = 0;\n\n  while (i < length) {\n    result.push(arr.slice(i, i += num));\n  }\n\n  return result;\n};\n\n//# sourceURL=webpack:///./src/extra/chunks.js?");
+
+/***/ }),
+
 /***/ "./src/extra/compose.js":
 /*!******************************!*\
   !*** ./src/extra/compose.js ***!
   \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst trace = (f, g) => (...args) => f(g(...args));\n/* harmony default export */ __webpack_exports__[\"default\"] = (compose = (...fns) => fns.reduce(trace));\n\n//# sourceURL=webpack:///./src/extra/compose.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar trace = function trace(f, g) {\n  return function () {\n    return f(g.apply(undefined, arguments));\n  };\n};\n\nexports.default = function () {\n  for (var _len = arguments.length, fns = Array(_len), _key = 0; _key < _len; _key++) {\n    fns[_key] = arguments[_key];\n  }\n\n  return fns.reduce(trace);\n};\n\n//# sourceURL=webpack:///./src/extra/compose.js?");
 
 /***/ }),
 
@@ -102,11 +114,11 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst trace = (f, g) => (...a
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! exports provided: chunk, compose, curry, debounce, deepCopy, flatMap, flatten, get, matches, memoize, pipe, prop, sort, tail */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"chunk\", function() { return chunk; });\n/* harmony import */ var _extra_compose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extra/compose */ \"./src/extra/compose.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"compose\", function() { return _extra_compose__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/curry'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/curry'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/debounce'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/debounce'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/deepCopy'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/deepCopy'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/flatMap'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/flatMap'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/flatten'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/flatten'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/get'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/get'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/matches'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/matches'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/memoize'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/memoize'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/pipe'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/pipe'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/prop'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/prop'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/sort'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/sort'\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './extra/tail'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nthrow new Error(\"Cannot find module './extra/tail'\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.compose = exports.chunk = undefined;\n\nvar _compose = __webpack_require__(/*! ./extra/compose */ \"./src/extra/compose.js\");\n\nvar _compose2 = _interopRequireDefault(_compose);\n\nvar _chunks = __webpack_require__(/*! ./extra/chunks */ \"./src/extra/chunks.js\");\n\nvar _chunks2 = _interopRequireDefault(_chunks);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// import curry from './extra/curry'\n// import debounce from './extra/debounce'\n// import deepCopy from './extra/deepCopy'\n// import flatMap from './extra/flatMap'\n// import flatten from './extra/flatten'\n// import get from './extra/get'\n// import matches from './extra/matches'\n// import memoize from './extra/memoize'\n// import pipe from './extra/pipe'\n// import prop from './extra/prop'\n// import sort from './extra/sort'\n// import tail from './extra/tail'\n\nexports.chunk = _chunks2.default;\nexports.compose = _compose2.default;\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

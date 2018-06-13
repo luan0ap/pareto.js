@@ -1,4 +1,4 @@
-export default chunks = (arr, num) => {
+export default (arr, num) => {
   const result = []
   const length = arr.length
   let i = 0
