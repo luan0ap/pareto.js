@@ -31,8 +31,6 @@ it('sorts a collection based on an number property', () => {
   ])
 })
 
-import sort from '../src/extra/sort'
-
 it('sorts a collection based on a string property', () => {
   const collection = [
     {
