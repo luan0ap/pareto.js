@@ -4,7 +4,7 @@ it('memoizes functions', () => {
   let count = 0
 
   const square = x => {
-    count = count + 1
+    count += 1
     return x * x
   }
 
