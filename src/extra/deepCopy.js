@@ -1,1 +1,1 @@
-export default object => ({...object})
+export default object => JSON.parse(JSON.stringify(object))

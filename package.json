@@ -31,7 +31,7 @@
       "js"
     ],
     "testMatch": [
-      "**/__tests__/*.(ts|js)"
+      "**/__tests__/*.js"
     ]
   },
   "devDependencies": {
